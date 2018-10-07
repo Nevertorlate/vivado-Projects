@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1515204653">
+  <File Type="ROUTE-STATUS-PB" Name="trafficlight_route_status.pb"/>
+  <File Type="PA-TCL" Name="trafficlight.tcl"/>
+  <File Type="OPT-DCP" Name="trafficlight_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="trafficlight_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="trafficlight_methodology_drc_opted.rpt"/>
+  <File Type="RDI-RDI" Name="trafficlight.vdi"/>
+  <File Type="PWROPT-DRC" Name="trafficlight_drc_pwropted.rpt"/>
+  <File Type="OPT-DRC" Name="trafficlight_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="trafficlight_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="trafficlight.hwdef"/>
+  <File Type="OPT-TIMING" Name="trafficlight_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="trafficlight_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="trafficlight_placed.dcp"/>
+  <File Type="PLACE-IO" Name="trafficlight_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="trafficlight_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="trafficlight_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="trafficlight_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="trafficlight_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="trafficlight_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="trafficlight_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="trafficlight_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="trafficlight_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="trafficlight_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="trafficlight_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="trafficlight_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="trafficlight_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="trafficlight_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="trafficlight_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="trafficlight_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="trafficlight_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="trafficlight_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="trafficlight_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="trafficlight.bit"/>
+  <File Type="ROUTE-PWR" Name="trafficlight_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="trafficlight_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="trafficlight_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="trafficlight_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="trafficlight_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="trafficlight_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="trafficlight_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="trafficlight_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="trafficlight_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="trafficlight_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="trafficlight_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="trafficlight_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="trafficlight_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="trafficlight_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIN" Name="trafficlight.bin"/>
+  <File Type="BITSTR-MSK" Name="trafficlight.msk"/>
+  <File Type="BITSTR-RBT" Name="trafficlight.rbt"/>
+  <File Type="BITSTR-NKY" Name="trafficlight.nky"/>
+  <File Type="BITSTR-BMM" Name="trafficlight_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="trafficlight.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="trafficlight.sysdef"/>
+  <File Type="BG-BGN" Name="trafficlight.bgn"/>
+  <File Type="BG-DRC" Name="trafficlight.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/alarm_clock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VGA_Control_eight.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/scan.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fdiv1khz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fdiv1hz.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dispselect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dispmux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dispdecoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/datamux.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/count_verilog.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/countersel.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter05.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/control.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/trafficlight.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="trafficlight"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/j.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

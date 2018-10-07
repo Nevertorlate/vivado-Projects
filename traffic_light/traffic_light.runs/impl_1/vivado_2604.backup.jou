@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jan 05 21:47:09 2018
+# Process ID: 2604
+# Current directory: C:/Users/admin/Desktop/traffic_light/traffic_light.runs/impl_1
+# Command line: vivado.exe -log trafficlight.vdi -applog -messageDb vivado.pb -mode batch -source trafficlight.tcl -notrace
+# Log file: C:/Users/admin/Desktop/traffic_light/traffic_light.runs/impl_1/trafficlight.vdi
+# Journal file: C:/Users/admin/Desktop/traffic_light/traffic_light.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source trafficlight.tcl -notrace

@@ -1,0 +1,158 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date             : Sat Jan 06 10:20:01 2018
+| Host             : DESKTOP-27D8AGB running 64-bit major release  (build 9200)
+| Command          : report_power -file trafficlight_power_routed.rpt -pb trafficlight_power_summary_routed.pb -rpx trafficlight_power_routed.rpx
+| Design           : trafficlight
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 52.682 (Junction temp exceeded!) |
+| Dynamic (W)              | 51.885                           |
+| Device Static (W)        | 0.797                            |
+| Effective TJA (C/W)      | 4.6                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |    13.662 |     8238 |       --- |             --- |
+|   LUT as Logic |    12.895 |     4487 |     63400 |            7.08 |
+|   CARRY4       |     0.486 |      843 |     15850 |            5.32 |
+|   F7/F8 Muxes  |     0.135 |      330 |     63400 |            0.52 |
+|   Register     |     0.122 |      727 |    126800 |            0.57 |
+|   BUFG         |     0.024 |        6 |        32 |           18.75 |
+|   Others       |     0.000 |       38 |       --- |             --- |
+| Signals        |    10.989 |     3404 |       --- |             --- |
+| I/O            |    27.234 |       48 |       210 |           22.86 |
+| Static Power   |     0.797 |          |           |                 |
+| Total          |    52.682 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    25.237 |      24.675 |      0.563 |
+| Vccaux    |       1.800 |     1.090 |       0.997 |      0.093 |
+| Vcco33    |       3.300 |     7.706 |       7.702 |      0.004 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------+-----------+
+| Name                 | Power (W) |
++----------------------+-----------+
+| trafficlight         |    51.885 |
+|   alarm_clock        |     0.136 |
+|     cnt1_0_reg[18]   |     0.008 |
+|     cnt1_0_reg[23]   |     0.006 |
+|     cnt1_0_reg[24]   |     0.007 |
+|     cnt1_0_reg[25]   |     0.007 |
+|   b2v_inst           |     0.437 |
+|   b2v_inst1          |     0.713 |
+|   b2v_inst11         |     0.134 |
+|   b2v_inst12         |     0.147 |
+|   b2v_inst2          |     0.539 |
+|   b2v_inst9          |     0.395 |
+|   btn2_reg[0]        |     0.050 |
+|   btn_reg[0]         |     0.046 |
+|   thr_color_1_reg[1] |     0.016 |
+|   thr_color_2_reg[1] |     0.025 |
+|   vga_controller_1   |    21.723 |
++----------------------+-----------+
+
+
